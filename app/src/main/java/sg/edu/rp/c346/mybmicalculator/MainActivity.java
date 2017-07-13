@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     float height = Float.parseFloat(etHeight.getText().toString());
                     String bmi = Float.toString(weight/(height*height));
                     float bmiFloat = weight/(height*height);
-                    String result = "";
+                    String result =" ";
                     if(bmiFloat >= 30){
                         result = "Obese";
                     }else if(bmiFloat >= 25){
@@ -152,7 +152,6 @@ public class MainActivity extends AppCompatActivity {
                         || etHeight.getText().toString().isEmpty()){
                     Toast.makeText(getApplicationContext(),"Please enter data", Toast.LENGTH_SHORT).show();
                 }else{
-
                     //step1:
                     float weight = Float.parseFloat(etWeight.getText().toString());
                     float height = Float.parseFloat(etHeight.getText().toString());
